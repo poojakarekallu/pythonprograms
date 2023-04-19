@@ -1,0 +1,24 @@
+1.amstrong number                                    
+while(num!=0)                                      
+{                                                   
+rem=num%10;                                        
+rev=rev*10+rem;                                       
+num=num/10;                                
+}
+
+num=int(input("enter a num: ")
+temp=num
+rev=0
+while num!=0:
+    rem=num%10;                                        
+    rev=rev*10+rem;                                       
+    num=num//10; 
+if rev==temp:
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+num=121
+rem=1           rem=1          rem=1
+rev=1           rev=12         rev=121
+num=12          num=1          num=0
