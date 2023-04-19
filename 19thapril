@@ -22,3 +22,13 @@ num=121
 rem=1           rem=1          rem=1
 rev=1           rev=12         rev=121
 num=12          num=1          num=0
+
+2.to check if a num is armstrong or not:
+ 153=1+125+27
+  logic:
+  while (num!=0)
+  {
+  rem=num%10;
+  sum=sum+sum+rem*rem*rem;
+  num=num/10;
+  }
