@@ -1,0 +1,74 @@
+strings
+
+a="pooja"
+print(a)
+o/p:pooja
+
+a="LKJ987#"
+print(a)    o/p:LKJ98#
+
+pooj="234as@"
+print(pooj) o/p:234as@
+print(type(pooj)) o/p:<class 'str'>
+
+variable is a container used to store data.
+
+a=123
+print(type(a)) o/p:<class 'int'>
+
+a="pooja"
+b=123
+print(a,b) o/p:pooja 123
+
+a='pooja's' o/p:synaxerror:undetermined string literal
+
+a='pooja"s'
+print(a) o/p:pooja"s
+
+b="pooja"s"
+print(b) o/p:synaxerror:undetermined string literal
+
+b="pooja's" 
+print(b) o/p:pooja's
+
+concatination
+name="pooja"
+greetings="good morning"
+c=name+greetings
+print(c)    o/p:poojagood morning
+
+string slicing:
+name="praneetha123"
+print(name[4:6]) o/p:ee
+
+name="praneetha123"
+print(name[4]) o/p:4
+
+name="pooja4444"
+print(name[-8:-2]) o/p:ooja44
+print(name[-9:-1])
+
+slicing with skip value
+name="tuheed2000"
+print(name[0:5:1]) o/p:tuhee
+print(name[0:6:2])  o/p:the
+print(name[0::6]   o/p:t2
+
+name="there was a king name ravindra and he had 3 queens and three children he was very brave"
+print(len(name))   o/p:87
+print(name.endswith("radha"))  o/p:false
+print(name.count("a"))   o/p:10
+print(name.find("h"))    o/p:1
+
+
+
+
+
+
+
+
+
+
+
+
+
