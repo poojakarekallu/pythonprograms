@@ -32,3 +32,67 @@ num=12          num=1          num=0
   sum=sum+sum+rem*rem*rem;
   num=num/10;
   }
+
+
+3.fibonacci series
+n=int(input("enter a num: "))
+a=0
+b=1
+if n<=2:
+    print("enter a valid number")
+else:
+    print(a,end=" ")
+    print(b,end=" ")
+    for i in range(n-2):
+        c=a+b
+        print(c,end=" ")
+        a=b
+        b=c
+
+    
+ 4.swaping of three numbers in ascending order
+ a=int(input("enter a value: "))
+b=int(input("enter b value: "))
+c=int(input("enter c value: "))
+if a>b and a>c:
+    if b>c:
+        temp=a
+        a=b
+        b=c
+        c=temp
+    else:
+        temp=a
+        a=b
+        b=c
+        c=temp
+elif b>a and b>c:
+    if a<c:
+        temp=b
+        b=c
+        c=temp
+    else:
+        temp=b
+        b=a
+        a=c
+        c=temp
+elif c>a and c>b:
+    if a>b:
+        temp=b
+        b=a
+        a=temp
+print(a,b,c)
+
+
+
+5.area of square,rectangle and triangle
+b=int(input("enter base: "))
+h=int(input("enter heigth: "))
+areaoftriangle=1/2*b*h
+print(areaoftriangle)
+l=int(input("enter length: "))
+w=int(input("enter width: "))
+areaofrect=l*w
+print(areaofrect)
+s=int(input("enter side: "))
+areaoftri=s*s
+print(areaoftri)
