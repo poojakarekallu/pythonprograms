@@ -60,6 +60,66 @@ print(name.endswith("radha"))  o/p:false
 print(name.count("a"))   o/p:10
 print(name.find("h"))    o/p:1
 
+list=["sameer model",9.4,False,'preethi']
+print(list)
+print(list[2])  o/p:false
+list[0]=10001
+print(list)   o/p:["10001",9.4,False,'preethi']
+print(list[0:2]) o/p:[10001,9.4]
+print(list[-3:-1])  o/p:[9.4,false]
+print(list[0:8])  o/p::["10001",9.4,False,'preethi']
+
+list methods
+
+radhika=[44,5,66,6,7,8]
+radhika.sort()
+print(radhika)   o/p:[5,6,7,8,44,66]
+radhika.reverse()
+print(radhika) o/p:[66,44,8,7,6,5]  
+
+l1=[2,3,4,5,6,78,99]
+l1.append(55)
+print(l1)    o/p:[2,3,4,5,6,78,99,55]
+l1.insert(0,10000)
+print(l1)    o/p:[10000, 2, 3, 4, 5, 6, 78, 99, 55] 
+
+li.remove(78) 
+print(l1)    o/p:[10000, 2, 3, 4, 5, 6, 99, 55]
+
+l1.pop()  o/p:[10000, 2, 3, 4, 5, 6, 99]
+l1.pop(5)  o/p:[10000, 2, 3, 4, 5, 99]
+print(l1.pop())  o/p:99 returns the popped element
+
+
+Tuple
+it is immutable.we cannot modify
+we use parenthesis
+tuple=(1,2,3,4,5)
+print(tuple) o/p:(1,2,3,4,5)
+
+
+a=()
+a=(1,)
+a=(2,3,4)
+
+a=("bhavan",3,4,False)
+print(a)   o/p:("bhavan",3,4,False)
+
+a=(1,2,3,4,5,1,1,1)
+print(a.count(1)) o/p:4   
+
+a=(1,2,3,4,5,6,78)
+print(a.count(78)) o/p:1
+print(a.index(1)) o/p:0
+
+
+
+
+
+
+
+
+
 
 
 
