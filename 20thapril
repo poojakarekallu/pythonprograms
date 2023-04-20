@@ -112,6 +112,44 @@ a=(1,2,3,4,5,6,78)
 print(a.count(78)) o/p:1
 print(a.index(1)) o/p:0
 
+f1=input("enter fruit number1")
+f2=input("enter fruit number1")
+f3=input("enter fruit number1")
+f4=input("enter fruit number1")
+f5=input("enter fruit number1")
+f6=input("enter fruit number1")
+f7=input("enter fruit number1")
+myfruitlist=[f1,f2,f3,f4,f5,f6,f7]
+print(myfruitlist)
+
+Arrays
+import array
+a=array.array("i",[1,2,3,4,5,6,7])
+
+import array as arr
+a=arr.array("i",[1,2,3,4,5,6,7])
+a
+o/p: array("i",[1,2,3,4,5,6,7])
+
+from array import *
+a=("i",[1,2,3,4,5,6,7])
+a
+o/p: ("i",[1,2,3,4,5,6,7])
+
+indexing starts from 0and not from 1.hence the index number is always less than the length of the array 
+negative index values can be used as well.the point to remember,the negative index starts from reverse order
+
+import array
+a=("f",[3,4,5,6,7])
+a
+('f',[3,4,5,6,7])
+print(len(a))  o/p:2
+
+
+
+
+
+
 
 
 
