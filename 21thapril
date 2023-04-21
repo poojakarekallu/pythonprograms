@@ -33,3 +33,121 @@ print(l1)    #[1, 2, 5, 7, 99]
 l1.sort(reverse=True)
 print(l1)      #[99, 7, 5, 2, 1]
 
+
+n=int(input("enter a value: "))
+i=1
+j=1
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+ o/p :*
+      * *
+      * * *
+      * * * *
+      
+  ERRORS AND EXCEPTIONS
+  there are two types of errors
+  1.logical error-->It occurs at runtime.  ex:a-b
+  2.syntactical error-->It occurs at compile time.  ex:print["helloworld"]
+  Both occurs while file is executing.
+  
+  Exception:it is something that disturbes the code.  ex:1/0
+  IT OCCURS AT RUNTIME.
+  1.ZERO DIVISION ERROR:IT OCCURS WHEN WE DIVIDEE WITH ZERO.
+  EOF ERROR:it ocurs when input() file reaches end of file.
+  INDEX ERROR:it occurs when we access the index that doesn't exsists
+  arr=[1,2,3]
+  print(arr[9])   #index error
+  Import error:if occurs when you import where it 
+  
+  
+  
+  
+  try:
+    x=1/0
+except EOFError:
+    print("eof error")
+except ValueError:
+    print("value error occured")
+except ZeroDivisionError:
+    print("zero division error occured")
+ o/P:zero division error occured
+ 
+ try:
+    x=1/0
+except EOFError:
+    print("eof error")
+except ValueError:
+    print("value error occured")
+except RuntimeError:
+    print("zero division error occured")
+o/p:x=1/0
+ZeroDivisionError: division by zero
+
+try:
+    x=1/10
+    print("inside try")
+except EOFError:
+    print("eof error")
+except ValueError:
+    print("value error occured")
+except RuntimeError:
+    print("zero division error occured")
+else:
+    print("control is inside else")
+o/p:inside try
+control is inside else
+
+ALIAS:
+try:
+    x=1/0
+except ZeroDivisionError as err:
+    print(err)
+O/P:division by zero
+
+FINALLY:IT IS ALWAYS EXECUTED
+try:
+    x=1/0
+except ZeroDivisionError as err:
+    print(err)
+finally:
+    print("finally will always gets executed")
+ O/P:
+ division by zero
+finally will always gets executed 
+
+try:
+    x=1/8
+except ZeroDivisionError as err:
+    print(err)
+finally:
+    print("finally will always gets executed")
+O/P:finally will always gets executed
+
+RAISE:IT IS USED TO RAISE EXCEPTION AND IT CAN HANDLED BY EXCEPT,ELSE,FINALLY
+arr=[1,2,3,4,5]
+try:
+    if len(arr)>=4:
+        raise ValueError("array length is greater or equal to 4")
+    else:
+        print("everything is fine")
+except ValueError as err:
+    print(err)
+o/p:array length is greater or equal to 4
+
+how to define custom exceptions
+class CustomException(Exception):
+    "this is custom exception"
+    pass
+try:
+    x=20
+    if x==20:
+        raise CustomException
+    else:
+        print("x is not 20")
+except  CustomException as err:
+    print("exception occured")
+o/p:exception occured
+  
+
