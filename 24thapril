@@ -1,0 +1,116 @@
+def addNumbers():
+    a=10
+    b=20
+    return (a+b)
+addNumbers()
+
+
+def addNumbers(a,b):
+    return (a+b)
+sum=addNumbers(10,30)
+print(sum)
+o/p:40
+
+def returnMultipleValues():
+    return 10,20,30
+output=returnMultipleValues()
+print(output)
+o/p:(10, 20, 30)
+
+
+
+def fib(n):
+    if n<=0:
+        print("invalid argument")
+        return -1
+    if n==1:
+        print(0," ",1)
+        return -1
+    a=0
+    b=1
+    print(a," ",b)
+    count=3
+    while count<=n:
+        next =a+b
+        print(next,end=" ")
+        a=b
+        b=next
+        count=count+1
+fib(10)
+o/p:0   1
+1 2 3 5 8 13 21 34 12
+
+
+def hcf(a,b):
+    while a!=b:
+        if a>b:
+            a-=b
+        else:
+            b-=a
+    print(a)
+hcf(36,60)
+
+
+def lcm(a,b):
+    if a>b:
+        greater=a
+    else:
+        greater=b
+    while True:
+        if((greater%a==0) and (greater %b==0)):
+            lcm=greater
+            break
+        greater+=1
+    print(lcm)
+lcm(8,12)
+o/p:24
+
+
+def dojob(n):
+    if n<=2:
+        return
+    #print(n)
+    dojob(n-1)
+    #print(n)
+dojob(10)
+o/p:
+10
+9
+8
+7
+6
+5
+4
+3
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+def dojob2(n):
+    if n<=5:
+        return
+    dojob2(n-1)
+    print(n)
+    dojob2(n-1)
+    print(n)
+dojob2(8)
+o/p:6
+6
+7
+6
+6
+7
+8
+6
+6
+7
+6
+6
+7
+8
